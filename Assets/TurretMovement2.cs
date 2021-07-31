@@ -15,7 +15,7 @@ public class TurretMovement2 : MonoBehaviour
     // This function is called every fixed framerate frame, if the MonoBehaviour is enabled
     private void FixedUpdate()
     {
-        float zInput = Input.GetAxisRaw("Vertical");
+        float zInput = Input.GetAxisRaw("PlayerTwoTurret");
         if (zInput != 0)
         {
             zAxis += (Time.deltaTime * zInput * turretSpeed);
