@@ -23,12 +23,12 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("Fire2"))
         {
             currPower += Time.deltaTime * 1 * 30;
             powerLabel.text = "SNAGA: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
         }
-        else if (Input.GetButtonUp("Fire1"))
+        else if (Input.GetButtonUp("Fire2"))
         {
             bullet.speed = Mathf.Clamp(currPower, minPower, maxPower);
             Shoot();

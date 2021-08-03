@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,35 +8,40 @@ public class Bullet : MonoBehaviour
     [SerializeField] float dmg;
     public float speed;
     public Rigidbody2D rb;
+    public float radius = 3;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb.velocity = transform.right * speed;
     }
-    
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Destroy(gameObject);
         Enemy enemy = collision.GetComponent<Enemy>();
-        if(enemy != null)
+        if (enemy != null)
         {
             enemy.TakeDamage(dmg);
             Destroy(gameObject);
         }
 
-        if(collision.tag == "Ground")
+        if (collision.tag == "Terrain")
         {
             Destroy(gameObject);
         }
     }
-
-
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        Destroy(gameObject);
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
         {
-            Destroy(collision.gameObject);
+            enemy.TakeDamage(dmg);
+            Destroy(gameObject);
         }
     }
 }
