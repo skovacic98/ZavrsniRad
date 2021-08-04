@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4534138071498364957}
   m_Layer: 0
   m_Name: Glavni Tenkic 2
-  m_TagString: Enemy
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  panel: {fileID: 4109223909233095323, guid: 1ce9e8a3c1ee8e941bfeade37c7b136b, type: 3}
 --- !u!1 &8857702533171923537
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float health = 100f;
+    public GameObject panel;
 
     public void TakeDamage(float dmg)
     {
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject);
+            panel.SetActive(true);
         }
     }
 
