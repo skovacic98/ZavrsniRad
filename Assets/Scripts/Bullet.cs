@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
     [SerializeField] float dmg;
     public float speed;
     public Rigidbody2D rb;
-    public float radius = 3;
 
 
     // Start is called before the first frame update
@@ -30,6 +29,7 @@ public class Bullet : MonoBehaviour
 
         if (collision.tag == "Terrain")
         {
+            SoundManger.PlaySound("missSound");
             Destroy(gameObject);
         }
     }

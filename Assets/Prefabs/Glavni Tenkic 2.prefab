@@ -312,10 +312,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2823672839506609041}
-  bulletPrefab: {fileID: 940600558781680856, guid: e38a4f5dd67fa0741b7e348f3549abaa,
-    type: 3}
-  bullet: {fileID: -5409540226779912837, guid: e38a4f5dd67fa0741b7e348f3549abaa, type: 3}
+  bulletPrefab:
+  - {fileID: 940600558781680856, guid: e38a4f5dd67fa0741b7e348f3549abaa, type: 3}
+  - {fileID: 8178300872258112598, guid: a5be4623e4e41f0448b64f4005294c83, type: 3}
+  - {fileID: 6130929872419204215, guid: ab14d7a3bb62ab742919f9f536ffbc71, type: 3}
+  - {fileID: 2996518776223847186, guid: 3e755a474f4682c46bfdfcc99ee5210d, type: 3}
+  - {fileID: 3713430383483611982, guid: 364f789521af5d745a04661dd07377d0, type: 3}
+  bullet:
+  - {fileID: -5409540226779912837, guid: e38a4f5dd67fa0741b7e348f3549abaa, type: 3}
+  - {fileID: 8178300872258112585, guid: a5be4623e4e41f0448b64f4005294c83, type: 3}
+  - {fileID: 6130929872419204200, guid: ab14d7a3bb62ab742919f9f536ffbc71, type: 3}
+  - {fileID: 2996518776223847181, guid: 3e755a474f4682c46bfdfcc99ee5210d, type: 3}
+  - {fileID: 3713430383483611985, guid: 364f789521af5d745a04661dd07377d0, type: 3}
   powerLabel: {fileID: 8857702534780751893}
+  Bullets: 9f8601000a000000020000000700000001000000
   minPower: 0
   maxPower: 100
   currPower: 0
@@ -344,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ce18b054d854c40b4d0318a51c0319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 150
   panel: {fileID: 4109223909233095323, guid: 1ce9e8a3c1ee8e941bfeade37c7b136b, type: 3}
 --- !u!1 &8857702533171923537
 GameObject:

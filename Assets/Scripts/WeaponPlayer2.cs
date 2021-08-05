@@ -6,33 +6,47 @@ using UnityEngine.UI;
 public class WeaponPlayer2 : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bulletPrefab;
-    public Bullet bullet;
+    public GameObject[] bulletPrefab = new GameObject[5];
+    public Bullet[] bullet = new Bullet[5];
     public Text powerLabel;
-
+    public int[] Bullets = { 9999, 10, 2, 7, 1 };
     public float minPower = 0f, maxPower = 100f;
     public float currPower = 0f;
+    int number = 0;
 
 
-
-    void Shoot()
+    void Shoot(int number)
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(bulletPrefab[number], firePoint.position, firePoint.rotation);
+        SoundManger.PlaySound("shootSound");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            currPower += Time.deltaTime * 1 * 30;
-            powerLabel.text = "SNAGA: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
+            SoundManger.PlaySound("reload");
+            number++;
+            if (number >= 5)
+            {
+                number = 0;
+            }
         }
-        else if (Input.GetButtonUp("Fire1"))
+        if (Bullets[number] > 0)
         {
-            bullet.speed = Mathf.Clamp(currPower, minPower, maxPower);
-            Shoot();
-            currPower = 0;
+            if (Input.GetButton("Fire1"))
+            {
+                currPower += Time.deltaTime * 1 * 30;
+                powerLabel.text = "SNAGA: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
+            }
+            else if (Input.GetButtonUp("Fire1"))
+            {
+                bullet[number].speed = Mathf.Clamp(currPower, minPower, maxPower);
+                Shoot(number);
+                Bullets[number]--;
+                currPower = 0;
+            }
         }
     }
 }

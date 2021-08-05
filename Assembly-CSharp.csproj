@@ -68,6 +68,7 @@
     <Compile Include="Assets\MapPick.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\ProceduralGeneration.cs" />
+    <Compile Include="Assets\Scripts\AmmoInventory.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CharcterMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\TurretMovement.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\WeaponPlayer2.cs" />
+    <Compile Include="Assets\SoundManger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
