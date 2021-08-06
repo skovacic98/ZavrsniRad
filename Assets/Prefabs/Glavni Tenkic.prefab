@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 2.601124
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 10
@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  weapon: {fileID: 3219351288449951248}
+  enemy: {fileID: 3219351289670210065}
 --- !u!114 &3219351288449951248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ce18b054d854c40b4d0318a51c0319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
+  health: 100
   panel: {fileID: 2869577443564744670, guid: 0d80a486f40bff14aa6b4e9050a97710, type: 3}
 --- !u!1 &3219351288921358625
 GameObject:
@@ -472,6 +474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900091267243136336, guid: 6e0bd23ca55694b41b7d95a78609181d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0bd23ca55694b41b7d95a78609181d, type: 3}

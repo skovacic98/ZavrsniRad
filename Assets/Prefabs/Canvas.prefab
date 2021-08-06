@@ -76,7 +76,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'KUT:'
+  m_Text: 'ANGLE:'
 --- !u!1 &4900091267243136333
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.37, y: 2.1441708}
+  m_AnchoredPosition: {x: 5.369995, y: 2.144165}
   m_SizeDelta: {x: 1281, y: 315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4900091267243136336
@@ -253,4 +253,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SNAGA: '
+  m_Text: 'POWER: '

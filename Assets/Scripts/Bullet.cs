@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float dmg;
     public float speed;
     public Rigidbody2D rb;
-
+    public GameObject impactEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -16,21 +16,31 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
+    private void Update()
+    {
+        float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
+        Destroy(impactEffect);
         Enemy enemy = collision.GetComponent<Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(dmg);
             Destroy(gameObject);
+            Destroy(impactEffect);
         }
 
         if (collision.tag == "Terrain")
         {
             SoundManger.PlaySound("missSound");
             Destroy(gameObject);
+            Destroy(impactEffect);
         }
     }
     

@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public GameObject[] bulletPrefab = new GameObject[5];
     public Bullet[] bullet = new Bullet[5];
     public Text powerLabel;
-    public int[] Bullets = {9999, 10, 2, 7, 1};
+    public int[] Bullets = {99999, 10, 2, 7, 1};
     public float minPower = 0f, maxPower = 100f;
     public float currPower = 0f;
     int number = 0;
@@ -18,6 +18,31 @@ public class Weapon : MonoBehaviour
     {
         Instantiate(bulletPrefab[number], firePoint.position, firePoint.rotation);
         SoundManger.PlaySound("shootSound");
+    }
+
+    public void AddBullets()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            switch(i)
+            {
+                case 0:
+                    Bullets[i] += 0;
+                    break;
+                case 1:
+                    Bullets[i] += 10;
+                    break;
+                case 2:
+                    Bullets[i] += 4;
+                    break;
+                case 3:
+                    Bullets[i] += 5;
+                    break;
+                case 4:
+                    Bullets[i] += 2;
+                    break;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -37,7 +62,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetButton("Fire2"))
             {
                 currPower += Time.deltaTime * 1 * 30;
-                powerLabel.text = "SNAGA: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
+                powerLabel.text = "POWER: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
             }
             else if (Input.GetButtonUp("Fire2"))
             {

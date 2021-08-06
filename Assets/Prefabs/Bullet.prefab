@@ -117,8 +117,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 25
-  speed: 23.35
+  speed: 14.073219
   rb: {fileID: 4215714479681934173}
+  impactEffect: {fileID: 5681204137733705852, guid: c2175474604469147a573658c6dd4411,
+    type: 3}
 --- !u!60 &-5968808425571272631
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class TurretMovement2 : MonoBehaviour
             zAxis += (Time.deltaTime * zInput * turretSpeed);
             zAxis = Mathf.Clamp(zAxis, maxAngleDown, maxAngleUp);
             transform.rotation = Quaternion.Euler(0, 0, zAxis);
-            angleLabel2.text = "KUT: " + zAxis;
+            angleLabel2.text = "ANGLE: " + zAxis;
         }
     }
 }

@@ -21,6 +21,31 @@ public class WeaponPlayer2 : MonoBehaviour
         SoundManger.PlaySound("shootSound");
     }
 
+    public void AddBullets()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            switch (i)
+            {
+                case 0:
+                    Bullets[i] += 0;
+                    break;
+                case 1:
+                    Bullets[i] += 10;
+                    break;
+                case 2:
+                    Bullets[i] += 4;
+                    break;
+                case 3:
+                    Bullets[i] += 5;
+                    break;
+                case 4:
+                    Bullets[i] += 2;
+                    break;
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +63,7 @@ public class WeaponPlayer2 : MonoBehaviour
             if (Input.GetButton("Fire1"))
             {
                 currPower += Time.deltaTime * 1 * 30;
-                powerLabel.text = "SNAGA: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
+                powerLabel.text = "POWER: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
             }
             else if (Input.GetButtonUp("Fire1"))
             {

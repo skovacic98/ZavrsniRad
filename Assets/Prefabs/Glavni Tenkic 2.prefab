@@ -299,6 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  weapon: {fileID: 4534138071498364967}
+  enemy: {fileID: 4534138071498364957}
 --- !u!114 &4534138071498364967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ce18b054d854c40b4d0318a51c0319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
+  health: 100
   panel: {fileID: 4109223909233095323, guid: 1ce9e8a3c1ee8e941bfeade37c7b136b, type: 3}
 --- !u!1 &8857702533171923537
 GameObject:
@@ -532,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'KUT:'
+  m_Text: 'ANGLE:'
 --- !u!1 &8857702534780751894
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,4 +611,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SNAGA: '
+  m_Text: 'POWER: '

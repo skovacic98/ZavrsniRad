@@ -5,8 +5,9 @@ using UnityEngine;
 public class CharcterMovement : MonoBehaviour
 {
     [SerializeField] float speed;
+    public Weapon weapon;
+    public Enemy enemy;
 
-    
 
     // Update is called once per frame
     void Update()
@@ -19,5 +20,21 @@ public class CharcterMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
             Destroy(collision.gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "AmmoCrate")
+        {
+            weapon.AddBullets();
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "HealthCrate")
+        {
+            enemy.AddHealth();
+            Destroy(collision.gameObject);
+        }
+
     }
 }

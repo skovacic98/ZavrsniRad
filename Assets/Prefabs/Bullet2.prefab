@@ -119,6 +119,8 @@ MonoBehaviour:
   dmg: 50
   speed: 7.1416764
   rb: {fileID: 6130929872419204201}
+  impactEffect: {fileID: 5681204137733705852, guid: c2175474604469147a573658c6dd4411,
+    type: 3}
 --- !u!60 &940448782683825557
 PolygonCollider2D:
   m_ObjectHideFlags: 0

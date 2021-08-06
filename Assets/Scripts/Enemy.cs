@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health = 100f;
+    public float health = 100f;
     public GameObject panel;
 
     public void TakeDamage(float dmg)
@@ -19,6 +19,11 @@ public class Enemy : MonoBehaviour
             SoundManger.PlaySound("DieSound");
             panel.SetActive(true);
         }
+    }
+
+    public void AddHealth()
+    {
+        health += 50;
     }
 
     IEnumerator DieSound()

@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 2823672840759314978, guid: 6655d3c171b7ae344800bc61baad04ac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2823672840759314978, guid: 6655d3c171b7ae344800bc61baad04ac,
         type: 3}
@@ -676,8 +676,77 @@ Transform:
   - {fileID: 761403149}
   - {fileID: 710860413}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &232034777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8158481861030908385, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.660645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.590872
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 073a9b471d17ed04b82dbd087eb40fb9, type: 3}
 --- !u!1 &249660714
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +821,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249660714}
   m_CullTransparentMesh: 0
+--- !u!1001 &341368186
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9056077550232752772, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.323704
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.37661
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d846d7681b2514443b932f92610ac6e2, type: 3}
 --- !u!1 &431086678
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +1083,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &579509884
 GameObject:
@@ -1260,6 +1398,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661434212}
   m_CullTransparentMesh: 0
+--- !u!1001 &706259324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8158481861030908385, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.537897
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.007745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 073a9b471d17ed04b82dbd087eb40fb9, type: 3}
 --- !u!1 &710860412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2391,7 @@ RectTransform:
   m_Children:
   - {fileID: 579509885}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66290,7 +66497,7 @@ RectTransform:
   m_Children:
   - {fileID: 1271013324}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66389,7 +66596,7 @@ RectTransform:
   m_Children:
   - {fileID: 249660715}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66525,6 +66732,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004526039}
   m_CullTransparentMesh: 0
+--- !u!1001 &1028115270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9056077550232752772, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.99178
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.970772
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d846d7681b2514443b932f92610ac6e2, type: 3}
 --- !u!1 &1153049884
 GameObject:
   m_ObjectHideFlags: 0
@@ -66567,7 +66843,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.675
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -66663,7 +66939,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1257585778
 PrefabInstance:
@@ -66720,7 +66996,7 @@ PrefabInstance:
     - target: {fileID: 3219351288449951251, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3219351288449951251, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
@@ -67102,3 +67378,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591697852}
   m_CullTransparentMesh: 0
+--- !u!1001 &1632771417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8158481861030908385, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.350685
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.007745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 073a9b471d17ed04b82dbd087eb40fb9, type: 3}
+--- !u!1001 &1721917664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8158481861030908385, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_Name
+      value: tanks_crateAmmo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.845821
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.978462
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 073a9b471d17ed04b82dbd087eb40fb9, type: 3}
