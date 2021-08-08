@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManger : MonoBehaviour
 {
-    public static AudioClip playerHitSound, groundHitSound, shootingSound, deathSound, weaponSwapSound;
+    public static AudioClip playerHitSound, groundHitSound, shootingSound, deathSound, weaponSwapSound, niceBonusHealth, niceBonusAmmo;
     static AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,8 @@ public class SoundManger : MonoBehaviour
         shootingSound = Resources.Load<AudioClip>("shootSound");
         deathSound = Resources.Load<AudioClip>("DieSound");
         weaponSwapSound = Resources.Load<AudioClip>("reload");
+        niceBonusHealth = Resources.Load<AudioClip>("nice, bonus health");
+        niceBonusAmmo = Resources.Load<AudioClip>("nice, bonus ammo");
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -36,6 +38,12 @@ public class SoundManger : MonoBehaviour
                 break;
             case "reload":
                 audioSource.PlayOneShot(weaponSwapSound);
+                break;
+            case "nice, bonus ammo":
+                audioSource.PlayOneShot(niceBonusAmmo);
+                break;
+            case "nice, bonus health":
+                audioSource.PlayOneShot(niceBonusHealth);
                 break;
         }
     }

@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     public Bullet[] bullet = new Bullet[5];
     public Text powerLabel;
     public int[] Bullets = {99999, 10, 2, 7, 1};
+    public Text[] bulletCount = new Text[5];
     public float minPower = 0f, maxPower = 100f;
     public float currPower = 0f;
     int number = 0;
@@ -17,7 +18,16 @@ public class Weapon : MonoBehaviour
     void Shoot(int number)
     {
         Instantiate(bulletPrefab[number], firePoint.position, firePoint.rotation);
+        
         SoundManger.PlaySound("shootSound");
+    }
+    void Start()
+    {
+        bulletCount[0].text = "99999";
+        bulletCount[1].text = "10";
+        bulletCount[2].text = "2";
+        bulletCount[3].text = "7";
+        bulletCount[4].text = "1";
     }
 
     public void AddBullets()
@@ -28,18 +38,23 @@ public class Weapon : MonoBehaviour
             {
                 case 0:
                     Bullets[i] += 0;
+                    bulletCount[i].text = "" + Bullets[i].ToString();
                     break;
                 case 1:
                     Bullets[i] += 10;
+                    bulletCount[i].text = "" + Bullets[i].ToString();
                     break;
                 case 2:
                     Bullets[i] += 4;
+                    bulletCount[i].text = "" + Bullets[i].ToString();
                     break;
                 case 3:
                     Bullets[i] += 5;
+                    bulletCount[i].text = "" + Bullets[i].ToString();
                     break;
                 case 4:
                     Bullets[i] += 2;
+                    bulletCount[i].text = "" + Bullets[i].ToString();
                     break;
             }
         }
@@ -48,7 +63,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             SoundManger.PlaySound("reload");
             number++;
@@ -66,9 +81,17 @@ public class Weapon : MonoBehaviour
             }
             else if (Input.GetButtonUp("Fire2"))
             {
-                bullet[number].speed = Mathf.Clamp(currPower, minPower, maxPower);
+                if (number == 4)
+                {
+                    bullet[number].speed = Mathf.Clamp(currPower-15, minPower, maxPower);
+                }
+                else
+                {
+                    bullet[number].speed = Mathf.Clamp(currPower, minPower, maxPower);
+                }
                 Shoot(number);
                 Bullets[number]--;
+                bulletCount[number].text = "" + Bullets[number].ToString();
                 currPower = 0;
             }
         }

@@ -26,12 +26,14 @@ public class CharcterMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "AmmoCrate")
         {
+            SoundManger.PlaySound("nice, bonus ammo");
             weapon.AddBullets();
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.tag == "HealthCrate")
         {
+            SoundManger.PlaySound("nice, bonus health");
             enemy.AddHealth();
             Destroy(collision.gameObject);
         }

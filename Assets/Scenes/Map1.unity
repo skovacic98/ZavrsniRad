@@ -665,7 +665,7 @@ Transform:
   - {fileID: 1111580708}
   - {fileID: 442992297}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &398440807
 GameObject:
@@ -1492,6 +1492,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &499551414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3219351289670210065, guid: e2dec9de65e503a42a1ea7767076dc7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132632786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ce18b054d854c40b4d0318a51c0319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671162173
 GameObject:
   m_ObjectHideFlags: 0
@@ -59327,6 +59339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glavni Tenkic
       objectReference: {fileID: 0}
+    - target: {fileID: 3219351289670210065, guid: e2dec9de65e503a42a1ea7767076dc7b,
+        type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 1803973997}
     - target: {fileID: 3219351288449951251, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59387,11 +59404,6 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 2.601124
       objectReference: {fileID: 0}
-    - target: {fileID: 3219351289670210065, guid: e2dec9de65e503a42a1ea7767076dc7b,
-        type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 1803973997}
     - target: {fileID: 3219351288449951248, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
       propertyPath: bullet
@@ -59407,6 +59419,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 4.0999756
       objectReference: {fileID: 0}
+    - target: {fileID: 7977847138688234507, guid: e2dec9de65e503a42a1ea7767076dc7b,
+        type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 499551414}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2dec9de65e503a42a1ea7767076dc7b, type: 3}
 --- !u!1 &1311388681
@@ -59640,7 +59657,7 @@ PrefabInstance:
     - target: {fileID: 9056077550232752772, guid: d846d7681b2514443b932f92610ac6e2,
         type: 3}
       propertyPath: m_Name
-      value: tanks_crateAmmo 1
+      value: Health1
       objectReference: {fileID: 0}
     - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
         type: 3}
@@ -59864,7 +59881,7 @@ PrefabInstance:
     - target: {fileID: 9056077550232752772, guid: d846d7681b2514443b932f92610ac6e2,
         type: 3}
       propertyPath: m_Name
-      value: tanks_crateAmmo 1 (1)
+      value: Health2
       objectReference: {fileID: 0}
     - target: {fileID: 9056077550232752776, guid: d846d7681b2514443b932f92610ac6e2,
         type: 3}
@@ -60863,6 +60880,16 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 436624869345497394, guid: 6655d3c171b7ae344800bc61baad04ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 244
+      objectReference: {fileID: 0}
+    - target: {fileID: 436624869345497394, guid: 6655d3c171b7ae344800bc61baad04ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6655d3c171b7ae344800bc61baad04ac, type: 3}
 --- !u!1001 &8158481860097983911
@@ -60915,7 +60942,7 @@ PrefabInstance:
     - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8158481861030908397, guid: 073a9b471d17ed04b82dbd087eb40fb9,
         type: 3}

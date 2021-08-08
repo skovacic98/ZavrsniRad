@@ -71,9 +71,11 @@
     <Compile Include="Assets\Scripts\AmmoInventory.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CharcterMovement.cs" />
+    <Compile Include="Assets\Scripts\ClusterBullet.cs" />
     <Compile Include="Assets\Scripts\DontDestroyMusic.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\HealthBarScript.cs" />
     <Compile Include="Assets\Scripts\SecondPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\TerrainDestroyer.cs" />
     <Compile Include="Assets\Scripts\TurretMovement.cs" />
