@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
     }
-
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Instantiate(impactEffect, transform.position, transform.rotation);
@@ -36,16 +36,19 @@ public class Bullet : MonoBehaviour
             Destroy(impactEffect);
         }
 
-        if (collision.tag == "Terrain")
+        if (collision.CompareTag("Terrain"))
         {
             SoundManger.PlaySound("missSound");
             Destroy(gameObject);
             Destroy(impactEffect);
         }
-    }
+    }*/
     
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Hit");
+        Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy != null)
@@ -53,5 +56,18 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(dmg);
             Destroy(gameObject);
         }
+
+        if(collision.gameObject.tag == "Terrain")
+        {
+            SoundManger.PlaySound("missSound");
+        }
+        /*
+        if(collision.collider.CompareTag("Terrain"))
+        {
+            SoundManger.PlaySound("missSound");
+            Destroy(gameObject);
+            Destroy(impactEffect);
+        }*/
+        
     }
 }

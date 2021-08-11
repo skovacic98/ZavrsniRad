@@ -77,7 +77,6 @@
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\HealthBarScript.cs" />
     <Compile Include="Assets\Scripts\SecondPlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\TerrainDestroyer.cs" />
     <Compile Include="Assets\Scripts\TurretMovement.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\WeaponPlayer2.cs" />

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 940600558781680856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.1096, y: 19.7819, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 25
-  speed: 14.073219
+  speed: 2.9378278
   rb: {fileID: 4215714479681934173}
   impactEffect: {fileID: 5681204137733705852, guid: c2175474604469147a573658c6dd4411,
     type: 3}
@@ -131,7 +131,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

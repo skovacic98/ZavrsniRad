@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2546584099756707851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -44.53655, y: 17.932205, z: -57.39584}
-  m_LocalScale: {x: 1.20692, y: 1.27771, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   bullet: {fileID: 6130929872419204200, guid: ab14d7a3bb62ab742919f9f536ffbc71, type: 3}
   y_max: 0
   y_current: 0
+  explosionCounter: 0
 --- !u!60 &8885353214692153833
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +135,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -149,7 +150,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.085, y: 0.07}
-      - {x: -0.085, y: -0.07}
-      - {x: 0.085, y: -0.07}
-      - {x: 0.085, y: 0.07}
+    - - {x: -0.07678223, y: 0.080869675}
+      - {x: -0.12558746, y: 0.0415411}
+      - {x: -0.12605476, y: -0.041075706}
+      - {x: -0.08599663, y: -0.07853222}
+      - {x: 0.04359436, y: -0.07856274}
+      - {x: 0.12698746, y: -0.031277657}
+      - {x: 0.12581825, y: 0.029928207}
+      - {x: 0.0444088, y: 0.07979679}

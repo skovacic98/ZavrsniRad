@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6130929872419204215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.07, y: 19.63, z: -57.39584}
-  m_LocalScale: {x: 1.20692, y: 1.27771, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -131,7 +131,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -146,7 +146,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.085, y: 0.07}
-      - {x: -0.085, y: -0.07}
-      - {x: 0.085, y: -0.07}
-      - {x: 0.085, y: 0.07}
+    - - {x: -0.077151775, y: 0.07997227}
+      - {x: -0.12445545, y: 0.03636551}
+      - {x: -0.12316227, y: -0.045420647}
+      - {x: -0.08520174, y: -0.07953739}
+      - {x: 0.0384295, y: -0.07840729}
+      - {x: 0.1235857, y: -0.030543327}
+      - {x: 0.1225152, y: 0.030076027}
+      - {x: 0.044250965, y: 0.07776165}

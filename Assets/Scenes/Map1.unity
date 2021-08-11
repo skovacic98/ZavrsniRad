@@ -744,7 +744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398440807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.23, y: 15.9, z: -48.95}
+  m_LocalPosition: {x: -17.23, y: 15.9, z: -60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1777,7 +1777,6 @@ GameObject:
   - component: {fileID: 1111580712}
   - component: {fileID: 1111580711}
   - component: {fileID: 1111580710}
-  - component: {fileID: 1111580709}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Terrain
@@ -1799,19 +1798,6 @@ Transform:
   m_Father: {fileID: 357033980}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1111580709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111580707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5aecfedc2ed1404baefb1ce4e9ff599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  terrain: {fileID: 1111580712}
 --- !u!19719996 &1111580710
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -59339,11 +59325,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glavni Tenkic
       objectReference: {fileID: 0}
-    - target: {fileID: 3219351289670210065, guid: e2dec9de65e503a42a1ea7767076dc7b,
-        type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 1803973997}
     - target: {fileID: 3219351288449951251, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59414,6 +59395,11 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3219351289670210065, guid: e2dec9de65e503a42a1ea7767076dc7b,
+        type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 1803973997}
     - target: {fileID: 1077530550721044462, guid: e2dec9de65e503a42a1ea7767076dc7b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
