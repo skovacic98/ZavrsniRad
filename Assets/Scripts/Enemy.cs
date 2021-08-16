@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject);
-            StartCoroutine(DieSound());
             SoundManger.PlaySound("DieSound");
             panel.SetActive(true);
         }
@@ -24,16 +23,5 @@ public class Enemy : MonoBehaviour
     public void AddHealth()
     {
         health += 50;
-    }
-
-    IEnumerator DieSound()
-    {
-        yield return new WaitForSecondsRealtime(2);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

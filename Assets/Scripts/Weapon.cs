@@ -59,8 +59,6 @@ public class Weapon : MonoBehaviour
             }
         }
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightControl))
@@ -76,7 +74,7 @@ public class Weapon : MonoBehaviour
         {
             if (Input.GetButton("Fire2"))
             {
-                currPower += Time.deltaTime * 1 * 30;
+                currPower += Time.deltaTime * 30;
                 powerLabel.text = "POWER: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
             }
             else if (Input.GetButtonUp("Fire2"))

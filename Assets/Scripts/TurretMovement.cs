@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class TurretMovement : MonoBehaviour
 {
     public float turretSpeed = 50.0f;
-    public float maxAngleDown = 70.0f;
-    public float maxAngleUp = 0.0f;
+    public float maxAngleDown = 0.0f;
+    public float maxAngleUp = 180.0f;
     public float zAxis = 0.0f;
     public Text angleLabel;
 

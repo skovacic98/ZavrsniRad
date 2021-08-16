@@ -60,9 +60,6 @@ public class WeaponPlayer2 : MonoBehaviour
             }
         }
     }
-
-   
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -78,7 +75,7 @@ public class WeaponPlayer2 : MonoBehaviour
         {
             if (Input.GetButton("Fire1"))
             {
-                currPower += Time.deltaTime * 1 * 30;
+                currPower += Time.deltaTime * 30;
                 powerLabel.text = "POWER: " + (int)Mathf.Clamp(currPower, minPower, maxPower);
             }
             else if (Input.GetButtonUp("Fire1"))
