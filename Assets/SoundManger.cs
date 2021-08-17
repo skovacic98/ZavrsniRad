@@ -6,7 +6,6 @@ public class SoundManger : MonoBehaviour
 {
     public static AudioClip playerHitSound, groundHitSound, shootingSound, deathSound, weaponSwapSound, niceBonusHealth, niceBonusAmmo;
     static AudioSource audioSource;
-    // Start is called before the first frame update
     void Start()
     {
         playerHitSound = Resources.Load<AudioClip>("playerHit");

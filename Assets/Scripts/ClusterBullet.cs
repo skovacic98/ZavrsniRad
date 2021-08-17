@@ -13,7 +13,6 @@ public class ClusterBullet : MonoBehaviour
     public float y_max = 0.0f;
     public float y_current = 0.0f;
     public int explosionCounter = 0;
-    // Start is called before the first frame update
     void Start()
     {
         speed = bullet.speed;
@@ -39,36 +38,19 @@ public class ClusterBullet : MonoBehaviour
             Instantiate(bullet, new Vector3(transform.position.x + 1.0f, transform.position.y - 1.0f, transform.position.z - 0.5f), transform.rotation);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(gameObject);
-        Destroy(impactEffect);
-        Enemy enemy = collision.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(dmg);
-            Destroy(gameObject);
-            Destroy(impactEffect);
-        }
-
-        if (collision.tag == "Terrain")
-        {
-            SoundManger.PlaySound("missSound");
-            Destroy(gameObject);
-            Destroy(impactEffect);
-        }
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(dmg);
             Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Terrain")
+        {
+            SoundManger.PlaySound("missSound");
         }
     }
 }
